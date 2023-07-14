@@ -8,5 +8,11 @@ adobe-cmap-parser = "0.3.3"
 encoding = "0.2.33"
 glob = "0.3.1"
 lopdf = { version = "0.31.0", features = ["image"] }
-native-dialog = "0.6.4"
+native-dialog = { version = "0.6.4", features = ["once_cell", "windows_dpi_awareness", "windows_visual_styles"] }
 umya-spreadsheet = "0.9.2"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+
