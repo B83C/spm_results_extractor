@@ -1,0 +1,12 @@
+[package]
+name = "spm_results_extractor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+adobe-cmap-parser = "0.3.3"
+encoding = "0.2.33"
+glob = "0.3.1"
+lopdf = { version = "0.31.0", features = ["image"] }
+native-dialog = "0.6.4"
+umya-spreadsheet = "0.9.2"
